@@ -64,7 +64,6 @@ router.get("/:userId", async (req, res) => {
         }
       })
     );
-    console.log(arabicMaidData);
 
     res.render("cv", { maidData: findMaid, arabicMaidData: arabicMaidData });
   } catch (err) {

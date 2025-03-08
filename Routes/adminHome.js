@@ -22,7 +22,10 @@ router.get('/add-maid',verifyAdminToken, (req, res) =>{
 router.get('/edit-maid/:id',verifyAdminToken, async (req, res) =>{
     const maidId = req.params.id;
     try {
-        const foundMaid = await Maid.findOne({_id: maidId});
+        const foundMaid = await Maid.findOne({_id: maidId});        
+        if(!foundMaid){
+            return res.status(404).send("No maid found with that ID");
+        }
         res.render("edit-profile", {maidData: foundMaid})
     } catch (error) {
         res.send(500).json({error: "An error occured"})

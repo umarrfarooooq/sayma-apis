@@ -46,7 +46,7 @@
         <!--navigation-->
         <ul class="metismenu" id="menu">
           <li>
-            <a href="pages-user-profile.html">
+            <a href="/">
               <div class="parent-icon"><ion-icon name="person-circle-sharp"></ion-icon>
               </div>
               <div class="menu-title">Messages</div>
@@ -228,12 +228,12 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="card radius-10">
-                  <form class="card-body" action="/api/v1/maids/<%= maidData._id %>?_method=PUT" method="post" enctype="multipart/form-data">
+                  <form class="card-body" action="/api/v1/maids/<%= maidData?._id %>?_method=PUT" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="_method" value="PUT">
                     <h5 class="mb-3">Edit Profile</h5>
                     <div class="mb-4 d-flex flex-column gap-3 align-items-center justify-content-center">
                       <div class="user-change-photo shadow">
-                        <img src="<%= process.env.BACKEND_URL %><%= maid.maidImg %>" alt="..." id="profileImage">
+                        <img src="<%= process.env.BACKEND_URL %><%= maidData.maidImg %>" alt="..." id="profileImage">
                       </div>
                       <label for="imageInput" class="btn btn-outline-primary btn-sm radius-30 px-4">
                         <ion-icon name="image-sharp"></ion-icon> Change Photo
