@@ -233,7 +233,7 @@
                     <h5 class="mb-3">Edit Profile</h5>
                     <div class="mb-4 d-flex flex-column gap-3 align-items-center justify-content-center">
                       <div class="user-change-photo shadow">
-                        <img src="https://res.cloudinary.com/umarfarooq/image/upload/<%= maidData.maidImg %>" alt="..." id="profileImage">
+                        <img src="<%= process.env.BACKEND_URL %><%= maid.maidImg %>" alt="..." id="profileImage">
                       </div>
                       <label for="imageInput" class="btn btn-outline-primary btn-sm radius-30 px-4">
                         <ion-icon name="image-sharp"></ion-icon> Change Photo
