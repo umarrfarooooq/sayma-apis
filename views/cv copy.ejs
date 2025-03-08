@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+    </noscript>
+    <link href="../assets/cv-css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="../assets/cv-css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="../assets/cv-css/aos.css?ver=1.2.0" rel="stylesheet">
+    <link href="../assets/cv-css/main.css?ver=1.2.0" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+        
+      </style>
+
+    </noscript>
+    <style>
+      body{
+        overflow-x: hidden !important;
+      }
+      .boxDabb{
+            font-size: 1.5rem !important;
+            border: 1px solid black;
+            padding: .8rem 1rem;
+            border-radius: .2em;
+            margin-top: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+      .boxDab{
+            font-size: 1.5rem !important;
+            border: 1px solid black;
+            padding: .8rem 1rem;
+            border-radius: .2rem;
+            margin-top: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 2rem;
+        }
+      .maid-image img {
+        width: -webkit-fill-available;
+        
+      }
+      .nameField{
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body id="top" style="color: black; font-family: 'Rubik', sans-serif; font-weight: bold;">
+    
+    <div class="page-content">
+      <div class="fullContainer">
+        <div class="header-image w-full">
+          <img style="width: -webkit-fill-available;" src="../assets/CV/Sayma header.png" alt="">
+        </div>
+        <div  style="padding-inline: 2.5rem;" class="cover mt-2">
+          <div class="cover-bg p-2 text-white">
+            <div class="nameField d-flex justify-content-between align-items-center">
+              <div class="">
+                  <div class="p-1">NAME</div>
+              </div>
+              <div class="">
+                  <div class="p-1">:</div>
+              </div>
+              <div class="p-1">
+                <%= maidData.name %>
+              </div>
+          </div>
+          </div>
+        </div>
+      <div class="cover">
+        <div class="py-3">
+          <div class="row" style="padding-inline: 2.5rem;">
+            <div class="col-lg-4 col-md-5">
+              <div class="avatar hover-effect bg-white shadow-sm p-1"
+                   style="height: 200px !important; border-radius: 50%; width: 100% !important; background-image: url('https://res.cloudinary.com/umarfarooq/image/upload/c_thumb,g_face,h_200,w_200,z_0.5/<%= maidData.maidImg %>'); background-size: cover; background-position: center top;">
+              </div>
+          </div>
+            <div class="col-lg-8 col-md-7 text-center text-md-start">
+              <div class="header-data">
+                <div class="boxDabb applied">
+                  <span>Applied For </span>
+                  <span>: </span>
+                  <span><%= maidData.appliedFor %></span>
+                </div>
+                <div class="boxDabb salery">
+                  <span>Monthly Salary</span>
+                  <span>:</span>
+                  <span><%= maidData.salery %> OMR</span>
+                </div>
+                <div class="boxDabb contract">
+                  <span>Contract Period </span>
+                  <span>:</span>
+                  <span><%= maidData.contractPeriod %></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+      <!-- <div  style="padding-inline: 2.5rem;" class="cover mt-2">
+        <div class="cover-bg p-2 text-white">
+          <div class="nameField d-flex justify-content-between align-items-center">
+            <div class="">
+                <div class="p-1">NAME</div>
+            </div>
+            <div class="">
+                <div class="p-1">:</div>
+            </div>
+            <div class="p-1">
+              <%= maidData.name %>
+            </div>
+        </div>
+        </div>
+      </div> -->
+  
+  <div style="padding-inline: 2.5rem;" class="about-section pt-4 px-3 mt-1">
+    <div class="row" style="justify-content: space-between;">
+      <div class="col-md-5" style=" width: 59% !important;">
+        <div class="row mt-2">
+          <div class="mainData">
+            <div class="boxDab" style="margin-top: 0 !important; background-color: #249D64; border: none; color: white;">
+              <span>Applicant Details</span>
+              
+            </div>
+            <div class="boxDab nationality">
+              <span>Nationality</span>
+              <span>:</span>
+              <span><%= maidData.nationality %></span>
+            </div>
+            <div class="boxDab salery">
+              <span >Religion</span>
+              <span >:</span>
+              <span ><%= maidData.religion %></span>
+            </div>
+            <div class="boxDab contract">
+              <span>Age</span>
+              <span>:</span>
+              <span><%= maidData.age %> </span>
+            </div>
+            <div class="boxDab contract">
+              <span>Maritial Status</span>
+              <span>:</span>
+              <span><%= maidData.maritalStatus %> </span>
+            </div>
+            <div class="boxDab contract">
+              <span>NO. OF Childrens</span>
+              <span>:</span>
+              <span><%= maidData.childrens %> </span>
+            </div>
+            <div class="boxDab contract">
+              <span>Education</span>
+              <span>:</span>
+              <span><%= maidData.education %> </span>
+            </div>
+            <div class="boxDab contract">
+              <span>Languages</span>
+              <span>:</span>
+              <span><%= maidData.languages %> </span>
+            </div>
+            <div class="boxDab contract">
+              <span>Experience</span>
+              <span>:</span>
+              <span><%= maidData.experience %> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5" style="display: flex; margin-top: 1rem !important; width: 40% !important; align-items: center; justify-content: end !important;">
+        <div class="maid-image" style="height: 40rem;">
+            <img style="height: 100% !important; width: 100% !important;" src="https://res.cloudinary.com/umarfarooq/image/upload/<%= maidData.maidImg %>" alt="Maid Image">
+        </div>
+    </div>
+
+    </div>
+  </div>
+  <hr class="d-print-none"/>
+  <div style="padding-inline: 2.5rem;" class="work-experience-section py-3">
+    <h2 class="h3 mb-2" style="display: inline-block; background-color: #F05D22; color: white; padding: .5rem 1rem; border-radius: .2rem;">Remarks</h2>
+    <div class="timeline">
+      <div class="">
+        <div style="font-size: 1.5rem; ">
+          <div><%= maidData.remarks %></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="d-print-none"/>
+  <div class="page-break"></div>
+  
+  
+</div></div>
+    </div>
+    </body>
+</html>

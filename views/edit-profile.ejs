@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en" class="semi-dark">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <!--plugins-->
+    <link href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="../assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <link href="../assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-extended.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--Theme Styles-->
+    <link href="../assets/css/dark-theme.css" rel="stylesheet" />../
+    <link href="../assets/css/semi-dark.css" rel="stylesheet" />
+    <link href="../assets/css/header-colors.css" rel="stylesheet" />
+
+    <title>Admin</title>
+  </head>
+  <body>
+    
+
+ <!--start wrapper-->
+    <div class="wrapper">
+       <!--start sidebar -->
+       <aside class="sidebar-wrapper" data-simplebar="true">
+        <div class="sidebar-header">
+          <div>
+            <a href="/">
+              <img src="../assets/images/logo-icon-2.png" class="logo-icon" alt="logo icon">
+            </a>          </div>
+          <div>
+            <h4 class="logo-text">Admin</h4>
+          </div>
+          <div class="toggle-icon ms-auto"><ion-icon name="menu-sharp"></ion-icon>
+          </div>
+        </div>
+        <!--navigation-->
+        <ul class="metismenu" id="menu">
+          <li>
+            <a href="pages-user-profile.html">
+              <div class="parent-icon"><ion-icon name="person-circle-sharp"></ion-icon>
+              </div>
+              <div class="menu-title">Messages</div>
+            </a>
+          </li>
+          <li>
+            <a href="/interviews">
+              <div class="parent-icon"><ion-icon name="person-circle-sharp"></ion-icon>
+              </div>
+              <div class="menu-title">Interviews</div>
+            </a>
+          </li>
+        </ul>
+        <!--end navigation-->
+     </aside>
+     <!--end sidebar -->
+
+        <!--start top header-->
+          <header class="top-header">
+            <nav class="navbar navbar-expand gap-3">
+              <div class="mobile-menu-button"><ion-icon name="menu-sharp"></ion-icon></div>
+              <form class="searchbar">
+                <div class="position-absolute top-50 translate-middle-y search-icon ms-3"><ion-icon name="search-sharp"></ion-icon></div>
+                <input class="form-control" type="text" placeholder="Search for anything">
+                <div class="position-absolute top-50 translate-middle-y search-close-icon"><ion-icon name="close-sharp"></ion-icon></div>
+             </form>
+             <div class="top-navbar-right ms-auto">
+
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item mobile-search-button">
+                  <a class="nav-link" href="javascript:;">
+                    <div class="">
+                      <ion-icon name="search-sharp"></ion-icon>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dark-mode-icon" href="javascript:;">
+                    <div class="mode-icon">
+                      <ion-icon name="moon-sharp"></ion-icon> 
+                    </div>
+                  </a>
+                </li>
+                
+                <li class="nav-item dropdown dropdown-large">
+                  <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                    <div class="position-relative">
+                      <span class="notify-badge">8</span>
+                      <ion-icon name="notifications-sharp"></ion-icon>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a href="javascript:;">
+                      <div class="msg-header">
+                        <p class="msg-header-title">Notifications</p>
+                        <p class="msg-header-clear ms-auto">Marks all as read</p>
+                      </div>
+                    </a>
+                    <div class="header-notifications-list">
+                      <a class="dropdown-item" href="javascript:;">
+                        <div class="d-flex align-items-center">
+                          <div class="notify text-primary"><ion-icon name="cart-outline"></ion-icon>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="msg-name">New Orders <span class="msg-time float-end">2 min
+                          ago</span></h6>
+                            <p class="msg-info">You have recived new orders</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item" href="javascript:;">
+                        <div class="d-flex align-items-center">
+                          <div class="notify text-danger"><ion-icon name="person-outline"></ion-icon>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="msg-name">New Customers<span class="msg-time float-end">14 Sec
+                           ago</span></h6>
+                            <p class="msg-info">5 new user registered</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item" href="javascript:;">
+                        <div class="d-flex align-items-center">
+                          <div class="notify text-success"><ion-icon name="document-outline"></ion-icon>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="msg-name">24 PDF File<span class="msg-time float-end">19 min
+                          ago</span></h6>
+                            <p class="msg-info">The pdf files generated</p>
+                          </div>
+                        </div>
+                      </a>
+                      
+                      <a class="dropdown-item" href="javascript:;">
+                        <div class="d-flex align-items-center">
+                          <div class="notify text-info"><ion-icon name="checkmark-done-outline"></ion-icon>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="msg-name">New Product Approved <span
+                          class="msg-time float-end">2 hrs ago</span></h6>
+                            <p class="msg-info">Your new product has approved</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item" href="javascript:;">
+                        <div class="d-flex align-items-center">
+                          <div class="notify text-warning"><ion-icon name="send-outline"></ion-icon>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="msg-name">Time Response <span class="msg-time float-end">28 min
+                          ago</span></h6>
+                            <p class="msg-info">5.1 min avarage time response</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item" href="javascript:;">
+                        <div class="d-flex align-items-center">
+                          <div class="notify text-danger"><ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="msg-name">New Comments <span class="msg-time float-end">4 hrs
+                          ago</span></h6>
+                            <p class="msg-info">New customer comments recived</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item" href="javascript:;">
+                        <div class="d-flex align-items-center">
+                          <div class="notify text-primary"><ion-icon name="albums-outline"></ion-icon>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="msg-name">New 24 authors<span class="msg-time float-end">1 day
+                          ago</span></h6>
+                            <p class="msg-info">24 new authors joined last week</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item" href="javascript:;">
+                        <div class="d-flex align-items-center">
+                          <div class="notify text-success"><ion-icon name="shield-outline"></ion-icon>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="msg-name">Your item is shipped <span class="msg-time float-end">5 hrs
+                          ago</span></h6>
+                            <p class="msg-info">Successfully shipped your item</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item" href="javascript:;">
+                        <div class="d-flex align-items-center">
+                          <div class="notify text-warning"><ion-icon name="cafe-outline"></ion-icon>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="msg-name">Defense Alerts <span class="msg-time float-end">2 weeks
+                          ago</span></h6>
+                            <p class="msg-info">45% less alerts last 4 weeks</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="javascript:;">
+                      <div class="text-center msg-footer">View All Notifications</div>
+                    </a>
+                  </div>
+                </li>
+
+               </ul>
+
+              </div>
+            </nav>
+          </header>
+        <!--end top header-->
+
+
+        <!-- start page content wrapper-->
+        <div class="page-content-wrapper">
+          <!-- start page content-->
+          <div class="page-content">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="card radius-10">
+                  <form class="card-body" action="/api/v1/maids/<%= maidData._id %>?_method=PUT" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="_method" value="PUT">
+                    <h5 class="mb-3">Edit Profile</h5>
+                    <div class="mb-4 d-flex flex-column gap-3 align-items-center justify-content-center">
+                      <div class="user-change-photo shadow">
+                        <img src="https://res.cloudinary.com/umarfarooq/image/upload/<%= maidData.maidImg %>" alt="..." id="profileImage">
+                      </div>
+                      <label for="imageInput" class="btn btn-outline-primary btn-sm radius-30 px-4">
+                        <ion-icon name="image-sharp"></ion-icon> Change Photo
+                      </label>
+                      <input type="file" id="imageInput" style="display: none;" accept="image/*" name="maidImg">
+                    </div>
+                    
+                    <h5 class="mb-0 mt-4">User Information</h5>
+                    <hr>
+                    <div class="row g-3">
+                      <div class="col-6">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" value="<%= maidData.name %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Nationality</label>
+                        <input type="text" class="form-control" name="nationality" value="<%= maidData.nationality %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Position</label>
+                        <input type="text" class="form-control" name="position" value="<%= maidData.position %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Salary</label>
+                        <input type="number" class="form-control" name="salery" value="<%= maidData.salery %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Price</label>
+                        <input type="number" class="form-control" name="price" value="<%= maidData.price %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Religion</label>
+                        <input type="text" class="form-control" name="religion" value="<%= maidData.religion %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Marital Status</label>
+                        <input type="text" class="form-control" name="maritalStatus" value="<%= maidData.maritalStatus %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Childrens</label>
+                        <input type="number" class="form-control" name="childrens" value="<%= maidData.childrens %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Age</label>
+                        <input type="number" class="form-control" name="age" value="<%= maidData.age %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Education</label>
+                        <input type="text" class="form-control" name="education" value="<%= maidData.education %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Languages</label>
+                        <input type="text" class="form-control" name="languages" value="<%= maidData.languages.join(', ') %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Contract Period</label>
+                        <input type="text" class="form-control" name="contractPeriod" value="<%= maidData.contractPeriod %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Applied For</label>
+                        <input type="text" class="form-control" name="appliedFor" value="<%= maidData.appliedFor %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Experience</label>
+                        <input type="text" class="form-control" name="experience" value="<%= maidData.experience %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Remarks</label>
+                        <input type="text" class="form-control" name="remarks" value="<%= maidData.remarks %>">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label">Video Link</label>
+                        <input type="text" class="form-control" name="videoLink" value="<%= maidData.videoLink %>">
+                      </div>
+                    </div>
+                    <div class="text-start mt-3">
+                      <button type="submit" class="btn btn-primary px-4">Save Changes</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div><!--end row-->
+  
+            </div>
+         
+
+
+         <!--Start Back To Top Button-->
+		     <a href="javaScript:;" class="back-to-top"><ion-icon name="arrow-up-outline"></ion-icon></a>
+         <!--End Back To Top Button-->
+  
+         <!--start overlay-->
+          <div class="overlay nav-toggle-icon"></div>
+         <!--end overlay-->
+
+     </div>
+  <!--end wrapper-->
+
+
+    <!-- JS Files-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/plugins/simplebar/js/simplebar.min.js"></script>
+    <script src="../assets/plugins/metismenu/js/metisMenu.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!--plugins-->
+    <script src="../assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+
+    <!-- Main JS-->
+    <script src="../assets/js/main.js"></script>
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const imageInput = document.getElementById("imageInput");
+        const profileImage = document.getElementById("profileImage");
+    
+        imageInput.addEventListener("change", (event) => {
+          const selectedFile = event.target.files[0];
+          
+          if (selectedFile) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+              profileImage.src = e.target.result;
+            };
+            reader.readAsDataURL(selectedFile);
+          }
+        });
+      });
+    </script>
+    
+
+  </body>
+</html>

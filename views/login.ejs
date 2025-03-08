@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" class="light-theme">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--plugins-->
+  <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <title>Login</title>
+</head>
+
+<body class="bg-white">
+
+  <!--start wrapper-->
+  <div class="wrapper">
+    <div class="">
+      <div class="row g-0 m-0">
+        <div class="col-xl-6 col-lg-12">
+          <div class="login-cover-wrapper">
+            <div class="card shadow-none">
+              <div class="card-body">
+                <div class="text-center">
+                  <h4>Sign In</h4>
+                  <p>Sign In to your account</p>
+                </div>
+                <form id="admin-login-form" class="form-body row g-3" action="/login/adminLogin" method="post">
+                  <div class="col-12">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input name="email" type="email" class="form-control" id="inputEmail">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputPassword" class="form-label">Password</label>
+                    <input name="password" type="password" class="form-control" id="inputPassword">
+                  </div>
+                  
+                  <div class="col-12 col-lg-12">
+                    <div class="d-grid">
+                      <button type="submit" class="btn btn-primary">Sign In</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-12">
+          <div class="position-fixed top-0 h-100 d-xl-block d-none login-cover-img">
+          </div>
+        </div>
+      </div>
+      <!--end row-->
+    </div>
+  </div>
+  <!--end wrapper-->
+
+</body>
+
+</html>
